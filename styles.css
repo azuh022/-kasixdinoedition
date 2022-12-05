@@ -1,0 +1,68 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-variant: small-caps;
+    color: rgb(40, 40, 110);
+}
+
+.score {
+    position: absolute;
+    font-size: 3vmin;
+    left: 2%;
+    top: 19%;
+}
+
+.start-screen {
+    position: absolute;
+    font-size: 5vmin;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.hide {
+    display: none;
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 29.4%;
+    }
+    5% {
+        bottom: 50%;
+    }
+    10% {
+        bottom: 70%;
+    }
+    90% {
+        bottom: 50%;
+    }
+    100% {
+        bottom: 29.4%;
+    }
+}
+
+.dino {
+    width: 98px;
+    height: 100px;
+    left: 200px;
+    bottom: 29.4%;
+    position: fixed;
+}
+
+.cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 30%;
+    bottom: 0;
+}
